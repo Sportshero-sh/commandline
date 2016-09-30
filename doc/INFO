@@ -1,10 +1,8 @@
 Command Line Parser Library
--------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------
 Project Author/Coordinator: Giacomo Stelluti Scala
-Main Contributors: Steven Evans, Kevin Moore, Dan Nemec (nemec), Alexander Fast (mizipzor)
-Others: Tom Glastonbury (tg73)
--------------------------------------------------------------------------------------------
-
+Main Contributor(s): Steven Evans, Kevin Moore, Dan Nemec (nemec), Alexander Fast (mizipzor)
+--------------------------------------------------------------------------------------------
 
 Git home:
 https://github.com/gsscoder/commandline
@@ -19,10 +17,19 @@ http://catb.org/~esr/writings/taoup/html/ch10s05.html.
 More info on:
 [QUICKSTART] http://commandline.codeplex.com/wikipage?title=Quickstart&referringTitle=Documentation
 [GUIDE] http://commandline.codeplex.com/documentation (*2)
-[BLOG] http://gsscoder.github.com/
+[BLOG] http://gsscoder.blogspot.com/
+
+Artifact regeneration:
+rake strings       -> src/libcmdline/Internal/SR.string.cs
+rake assemblyinfo  -> src/CommonAssemblyInfo.cs
 
 Build (requires Ruby):
-MonoDevelop or Visual Studio
+gem install rake
+gem install albacore
+rake
+	
+Unit Tests:
+rake test
 
 Documentation:
 From version 1.9.0.3 Beta CHM HelpFile was removed from {libroot}/doc.
